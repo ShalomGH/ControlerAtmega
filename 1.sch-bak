@@ -575,14 +575,46 @@ Wire Wire Line
 Wire Wire Line
 	7780 3740 8080 3740
 $Comp
-L My_library:power_block-My_library BP?
-U 1 1 5DED7E30
-P 7185 5730
-F 0 "BP?" H 7185 5645 50  0000 C CNN
-F 1 "power_block-My_library" H 7185 5554 50  0000 C CNN
-F 2 "" H 7185 5730 50  0001 C CNN
-F 3 "" H 7185 5730 50  0001 C CNN
-	1    7185 5730
+L My_library:AC-DC BP?
+U 1 1 5DEDCE5A
+P 7770 6235
+F 0 "BP?" H 7770 5520 50  0000 C CNN
+F 1 "AC-DC" H 7770 5611 50  0000 C CNN
+F 2 "" H 7770 6235 50  0001 C CNN
+F 3 "" H 7770 6235 50  0001 C CNN
+	1    7770 6235
+	-1   0    0    1   
+$EndComp
+Text Label 8525 5935 2    50   ~ 0
+220_In1
+Wire Wire Line
+	8525 5735 8220 5735
+Text Label 8525 5735 2    50   ~ 0
+220_In2
+Wire Wire Line
+	8525 5935 8220 5935
+$Comp
+L power:Earth #PWR?
+U 1 1 5DEE09E9
+P 7320 5735
+F 0 "#PWR?" H 7320 5485 50  0001 C CNN
+F 1 "Earth" H 7320 5585 50  0001 C CNN
+F 2 "" H 7320 5735 50  0001 C CNN
+F 3 "~" H 7320 5735 50  0001 C CNN
+	1    7320 5735
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5DEE137C
+P 7180 5935
+F 0 "#PWR?" H 7180 5785 50  0001 C CNN
+F 1 "+5V" H 7075 5950 50  0000 C CNN
+F 2 "" H 7180 5935 50  0001 C CNN
+F 3 "" H 7180 5935 50  0001 C CNN
+	1    7180 5935
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7180 5935 7320 5935
 $EndSCHEMATC
