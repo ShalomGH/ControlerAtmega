@@ -15,17 +15,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MCU_Microchip_ATmega:ATmega8A-PU U1
-U 1 1 5DE609F0
-P 3095 3220
-F 0 "U1" H 3100 3220 50  0000 C CNN
-F 1 "ATmega8A-PU" H 3105 3430 50  0000 C CNN
-F 2 "Housings_DIP:DIP-28_W7.62mm_LongPads" H 3095 3220 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Microchip%208bit%20mcu%20AVR%20ATmega8A%20data%20sheet%2040001974A.pdf" H 3095 3220 50  0001 C CNN
-	1    3095 3220
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:Crystal Y1
 U 1 1 5DE6146B
 P 2225 2440
@@ -109,10 +98,8 @@ F 3 "~" H 3095 4620 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3195 4620 3095 4620
-Connection ~ 3095 4620
 Wire Wire Line
 	3195 1820 3095 1820
-Connection ~ 3095 1820
 Wire Wire Line
 	1770 2590 1680 2590
 Connection ~ 1770 2590
@@ -200,7 +187,6 @@ F 3 "~" H 1875 1930 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2495 2120 2350 2120
-Connection ~ 2495 2120
 Wire Wire Line
 	7390 1945 7230 1945
 Wire Wire Line
@@ -319,17 +305,6 @@ Wire Wire Line
 	6915 5165 7215 5165
 Wire Wire Line
 	6915 5065 7215 5065
-$Comp
-L My_library:AC-DC #BP0101
-U 1 1 5DEDCE5A
-P 5495 5195
-F 0 "#BP0101" H 5490 4785 50  0000 C CNN
-F 1 "AC-DC" H 5495 4571 50  0000 C CNN
-F 2 "Library:BP pod vpaiky" H 5495 5195 50  0001 C CNN
-F 3 "" H 5495 5195 50  0001 C CNN
-	1    5495 5195
-	-1   0    0    1   
-$EndComp
 Text Label 6250 4895 2    50   ~ 0
 220_In1
 Wire Wire Line
@@ -1219,4 +1194,29 @@ F 3 "http://www.micropik.com/PDF/BT136-600.pdf" H 6195 3425 50  0001 L CNN
 	1    6195 3425
 	1    0    0    -1  
 $EndComp
+$Comp
+L My_library:AC-DC #Q4
+U 1 1 5DEDCE5A
+P 5495 5195
+F 0 "#Q4" H 5490 4785 50  0000 C CNN
+F 1 "AC-DC" H 5495 4571 50  0000 C CNN
+F 2 "Library:BP pod vpaiky" H 5495 5195 50  0001 C CNN
+F 3 "" H 5495 5195 50  0001 C CNN
+	1    5495 5195
+	-1   0    0    1   
+$EndComp
+$Comp
+L MCU_Microchip_ATmega:ATmega8A-AU U1
+U 1 1 5DF01EBB
+P 3095 3220
+F 0 "U1" H 3095 4801 50  0000 C CNN
+F 1 "ATmega8A-AU" H 3095 4710 50  0000 C CNN
+F 2 "Package_QFP:TQFP-32_7x7mm_P0.8mm" H 3095 3220 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Microchip%208bit%20mcu%20AVR%20ATmega8A%20data%20sheet%2040001974A.pdf" H 3095 3220 50  0001 C CNN
+	1    3095 3220
+	1    0    0    -1  
+$EndComp
+Connection ~ 2495 2120
+Connection ~ 3095 4620
+Connection ~ 3095 1820
 $EndSCHEMATC

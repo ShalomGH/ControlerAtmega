@@ -5,7 +5,7 @@
 <!--   Version : 2                         -->
 <!--   Program : TopoR Lite 7.0.18578      -->
 <!--   Date    : Friday, December 06, 2019 -->
-<!--   Time    : 09:33                     -->
+<!--   Time    : 19:27                     -->
 <!--***************************************-->
 
 <Project>
@@ -13,9 +13,11 @@
    <GUID>{0A9994AC-7C8F-46EF-A7A4-368764CFBAC5}</GUID>
    <Documents>
       <Section name="PCB" isExpanded="true">
-         <File path=".\1.fsx" isopened="1" dateChange="2019-12-06 09:29:38"/>
+         <File path=".\1.fsx" isopened="1" dateChange="2019-12-06 09:33:28"/>
       </Section>
-      <Section name="AutoRouting" isExpanded="false"/>
+      <Section name="AutoRouting" isExpanded="true">
+         <File path=".\autoroute_191206192357\1_1104-0s.fsb" isopened="0" dateChange="2019-12-06 19:24:15"/>
+      </Section>
    </Documents>
    <Import>
       <Specctra>
