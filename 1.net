@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source "I:\\Moi Dokumenti\\Семён\\работа\\1\\order1\\1.sch")
-    (date "Чт 05.12.19 22:01:14")
+    (date "Пт 06.12.19 9:38:31")
     (tool "Eeschema (5.1.4)-1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -17,7 +17,7 @@
   (components
     (comp (ref U1)
       (value ATmega8A-PU)
-      (footprint Package_DIP:DIP-28_W7.62mm)
+      (footprint Housings_DIP:DIP-28_W7.62mm_LongPads)
       (datasheet http://ww1.microchip.com/downloads/en/DeviceDoc/Microchip%208bit%20mcu%20AVR%20ATmega8A%20data%20sheet%2040001974A.pdf)
       (libsource (lib MCU_Microchip_ATmega) (part ATmega8A-PU) (description "16MHz, 8kB Flash, 1kB SRAM, 512B EEPROM, DIP-28"))
       (sheetpath (names /) (tstamps /))
@@ -318,6 +318,7 @@
       (tstamp 5DE927CC))
     (comp (ref F1)
       (value Fuse)
+      (footprint Library:MyBladeFuse)
       (datasheet ~)
       (libsource (lib Device) (part Fuse) (description Fuse))
       (sheetpath (names /) (tstamps /))
@@ -380,7 +381,7 @@
       (tstamp 5DF3BB0E))
     (comp (ref Q3)
       (value BT136)
-      (footprint Package_TO_SOT_THT:TO-220-3_Vertical)
+      (footprint TO_SOT_Packages_THT:TO-220-3_Vertical)
       (datasheet http://www.micropik.com/PDF/BT136-600.pdf)
       (libsource (lib Triac_Thyristor) (part BT136-600) (description "4A RMS, 500V Off-State Voltage, Triac, TO-220"))
       (sheetpath (names /) (tstamps /))

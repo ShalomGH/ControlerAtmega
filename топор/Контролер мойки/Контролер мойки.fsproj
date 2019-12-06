@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--***************************************-->
+<!--   File    : Контролер мойки.fsproj    -->
+<!--   Format  : TopoR Project file        -->
+<!--   Version : 2                         -->
+<!--   Program : TopoR Lite 7.0.18578      -->
+<!--   Date    : Friday, December 06, 2019 -->
+<!--   Time    : 09:33                     -->
+<!--***************************************-->
+
+<Project>
+   <Version current="2"/>
+   <GUID>{0A9994AC-7C8F-46EF-A7A4-368764CFBAC5}</GUID>
+   <Documents>
+      <Section name="PCB" isExpanded="true">
+         <File path=".\1.fsx" isopened="1" dateChange="2019-12-06 09:29:38"/>
+      </Section>
+      <Section name="AutoRouting" isExpanded="false"/>
+   </Documents>
+   <Import>
+      <Specctra>
+         <Path name="I:\Moi Dokumenti\Семён\кикад\имп реле низ\Имп реле низ.dsn"/>
+         <Path name="I:\Moi Dokumenti\Семён\работа\1\order1\топор\Контролер мойки\1.dsn"/>
+      </Specctra>
+   </Import>
+</Project>
