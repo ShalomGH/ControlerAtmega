@@ -1,7 +1,7 @@
 (export (version D)
   (design
-    (source "I:\\Moi Dokumenti\\Семён\\работа\\1\\order1\\1.sch")
-    (date "Пн 09.12.19 21:51:34")
+    (source G:\order1\1.sch)
+    (date "Пн 09.12.19 23:02:02")
     (tool "Eeschema (5.1.4)-1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -317,7 +317,7 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 5DFCD83F))
     (comp (ref J10)
-      (value LedOUT)
+      (value ResOUT)
       (footprint Connectors_Terminal_Blocks:TerminalBlock_Altech_AK300-2_P5.00mm)
       (datasheet ~)
       (libsource (lib Connector_Generic) (part Conn_01x02) (description "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"))

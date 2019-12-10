@@ -1018,7 +1018,7 @@ L Connector_Generic:Conn_01x02 J10
 U 1 1 5DEBFCA0
 P 7910 4105
 F 0 "J10" H 7990 4097 50  0000 L CNN
-F 1 "LedOUT" H 7990 4006 50  0000 L CNN
+F 1 "ResOUT" H 7990 4006 50  0000 L CNN
 F 2 "Connectors_Terminal_Blocks:TerminalBlock_Altech_AK300-2_P5.00mm" H 7910 4105 50  0001 C CNN
 F 3 "~" H 7910 4105 50  0001 C CNN
 	1    7910 4105
@@ -1176,7 +1176,7 @@ F 3 "http://www.micropik.com/PDF/BT136-600.pdf" H 6195 3425 50  0001 L CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L My_library:AC-DC #Q4
+L 1-rescue:AC-DC-My_library #Q4
 U 1 1 5DEDCE5A
 P 5495 5195
 F 0 "#Q4" H 5490 4785 50  0000 C CNN
