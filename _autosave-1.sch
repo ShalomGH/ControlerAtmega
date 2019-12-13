@@ -359,17 +359,6 @@ Wire Wire Line
 Wire Wire Line
 	6915 4775 7215 4775
 $Comp
-L Device:R R3
-U 1 1 5DE7B4F3
-P 4190 2220
-F 0 "R3" V 4265 2220 50  0000 C CNN
-F 1 "150k" V 4190 2220 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206" V 4120 2220 50  0001 C CNN
-F 3 "~" H 4190 2220 50  0001 C CNN
-	1    4190 2220
-	0    1    1    0   
-$EndComp
-$Comp
 L Device:R R5
 U 1 1 5DEB8499
 P 4190 4220
@@ -380,7 +369,7 @@ F 3 "~" H 4190 4220 50  0001 C CNN
 	1    4190 4220
 	0    1    1    0   
 $EndComp
-Text Label 4020 2190 2    50   ~ 0
+Text Label 4020 2155 2    50   ~ 0
 Button
 $Comp
 L Connector_Generic:Conn_01x02 J8
@@ -427,17 +416,6 @@ Wire Wire Line
 	8535 2630 8295 2630
 Wire Wire Line
 	8520 3115 8295 3115
-Wire Wire Line
-	3695 3460 3695 3520
-Wire Wire Line
-	3695 2220 3785 2220
-Wire Wire Line
-	3785 2220 3785 2190
-Wire Wire Line
-	3785 2190 4020 2190
-Connection ~ 3785 2220
-Wire Wire Line
-	3785 2220 4040 2220
 $Comp
 L power:Earth #PWR0112
 U 1 1 5DF9744E
@@ -547,17 +525,17 @@ Connection ~ 5045 4695
 $Comp
 L Device:R R2
 U 1 1 5DFECCE6
-P 3845 3920
-F 0 "R2" V 3770 3920 50  0000 C CNN
-F 1 "270" V 3845 3920 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206" V 3775 3920 50  0001 C CNN
-F 3 "~" H 3845 3920 50  0001 C CNN
-	1    3845 3920
+P 3845 2300
+F 0 "R2" V 3770 2300 50  0000 C CNN
+F 1 "270" V 3845 2300 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 3775 2300 50  0001 C CNN
+F 3 "~" H 3845 2300 50  0001 C CNN
+	1    3845 2300
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3995 3920 4235 3920
-Text Label 4235 3920 2    50   ~ 0
+	3995 2300 4235 2300
+Text Label 4235 2300 2    50   ~ 0
 Led
 $Comp
 L Connector_Generic:Conn_01x02 J9
@@ -585,8 +563,6 @@ Text Label 8325 3645 0    50   ~ 0
 Led
 Wire Wire Line
 	8455 3645 8325 3645
-Text Label 4940 3240 0    50   ~ 0
-MotorPin
 Text Label 4940 1620 0    50   ~ 0
 PumpPin
 $Comp
@@ -1176,9 +1152,6 @@ F 3 "~" H 5380 3440 50  0001 C CNN
 $EndComp
 Text Label 4915 2430 0    50   ~ 0
 ValvePin
-Wire Wire Line
-	5230 3240 4940 3240
-Connection ~ 5230 3240
 Text Label 4030 4055 2    50   ~ 0
 MotorPin
 Wire Wire Line
@@ -1215,42 +1188,81 @@ Wire Wire Line
 	5230 1620 4940 1620
 Connection ~ 5230 1620
 Wire Wire Line
-	3785 2120 3695 2120
+	3785 2055 3695 2055
 Wire Wire Line
-	3785 2090 4020 2090
+	3785 2025 4020 2025
 Wire Wire Line
-	3785 2120 3785 2090
+	3785 2055 3785 2025
 Wire Wire Line
-	4040 2120 3785 2120
+	4040 2055 3785 2055
 $Comp
 L Device:R R4
 U 1 1 5DF5A9F9
-P 4190 2120
-F 0 "R4" V 4110 2120 50  0000 C CNN
-F 1 "150k" V 4190 2120 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206" V 4120 2120 50  0001 C CNN
-F 3 "~" H 4190 2120 50  0001 C CNN
-	1    4190 2120
+P 4190 2055
+F 0 "R4" V 4110 2055 50  0000 C CNN
+F 1 "150k" V 4190 2055 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 4120 2055 50  0001 C CNN
+F 3 "~" H 4190 2055 50  0001 C CNN
+	1    4190 2055
 	0    1    1    0   
 $EndComp
-Text Label 4020 2090 2    50   ~ 0
+Text Label 4020 2025 2    50   ~ 0
 Switch
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR0116
 U 1 1 5DF9338B
-P 4340 2120
-F 0 "#PWR?" H 4340 1970 50  0001 C CNN
-F 1 "+5V" H 4430 2150 50  0000 C CNN
-F 2 "" H 4340 2120 50  0001 C CNN
-F 3 "" H 4340 2120 50  0001 C CNN
-	1    4340 2120
+P 4340 2055
+F 0 "#PWR0116" H 4340 1905 50  0001 C CNN
+F 1 "+5V" H 4430 2085 50  0000 C CNN
+F 2 "" H 4340 2055 50  0001 C CNN
+F 3 "" H 4340 2055 50  0001 C CNN
+	1    4340 2055
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	5230 2430 4915 2430
 Connection ~ 5230 2430
-Connection ~ 3785 2120
+Connection ~ 3785 2055
+Connection ~ 4340 2055
 Wire Wire Line
-	4340 2220 4340 2120
-Connection ~ 4340 2120
+	3695 2120 3695 2055
+Wire Wire Line
+	3785 2155 4020 2155
+Wire Wire Line
+	3785 2185 3785 2155
+$Comp
+L Device:R R3
+U 1 1 5DE7B4F3
+P 4190 2185
+F 0 "R3" V 4230 2350 50  0000 C CNN
+F 1 "150k" V 4190 2185 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 4120 2185 50  0001 C CNN
+F 3 "~" H 4190 2185 50  0001 C CNN
+	1    4190 2185
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4340 2055 4340 2185
+Wire Wire Line
+	4040 2185 3785 2185
+Wire Wire Line
+	3695 2185 3695 2220
+Connection ~ 3785 2185
+Wire Wire Line
+	3785 2185 3695 2185
+Wire Wire Line
+	3695 2300 3695 2320
+Connection ~ 5230 3240
+Wire Wire Line
+	5230 3240 4940 3240
+Text Label 4940 3240 0    50   ~ 0
+MotorPin
+Text Label 4010 3620 2    50   ~ 0
+ValvePin
+Wire Wire Line
+	3695 3620 4010 3620
+Text Label 4020 3720 2    50   ~ 0
+PumpPin
+Wire Wire Line
+	3695 3720 4020 3720
 $EndSCHEMATC
