@@ -1,7 +1,3 @@
 (sym_lib_table
-  (lib (name 1-cache)(type Legacy)(uri ${KIPRJMOD}/1-cache.lib)(options "")(descr ""))
-  (lib (name Имп_реле_низ-cache)(type Legacy)(uri "${MY}/Имп реле низ-cache.lib")(options "")(descr ""))
-  (lib (name Имп_реле_низ-rescue)(type Legacy)(uri "${MY}/Имп реле низ-rescue.lib")(options "")(descr ""))
-  (lib (name Имп_реле-cache)(type Legacy)(uri "${MY}/Имп реле-cache.lib")(options "")(descr ""))
-  (lib (name 1-rescue)(type Legacy)(uri ${KIPRJMOD}/1-rescue.lib)(options "")(descr ""))
+  (lib (name wash_control-rescue)(type Legacy)(uri ${KIPRJMOD}/wash_control-rescue.lib)(options "")(descr ""))
 )
