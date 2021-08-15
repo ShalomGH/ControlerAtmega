@@ -518,7 +518,7 @@ Wire Wire Line
 Text Label 4880 1750 0    50   ~ 0
 PumpPin
 $Comp
-L wash_control-rescue:MOC3023M-Relay_SolidState-1-rescue U4
+L wash_control-rescue:MOC3023M-Relay_SolidState-1-rescue-wash_control-rescue U4
 U 1 1 5DEE37FE
 P 6110 3470
 F 0 "U4" H 6105 3735 50  0000 C CNN
@@ -628,7 +628,7 @@ Text Label 7470 3370 2    50   ~ 0
 Text Label 7470 3970 2    50   ~ 0
 Motor
 $Comp
-L wash_control-rescue:MOC3023M-Relay_SolidState-1-rescue U2
+L wash_control-rescue:MOC3023M-Relay_SolidState-1-rescue-wash_control-rescue U2
 U 1 1 5DECB45B
 P 6110 1850
 F 0 "U2" H 6105 2115 50  0000 C CNN
@@ -738,7 +738,7 @@ F 3 "~" H 5320 1750 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L wash_control-rescue:MOC3023M-Relay_SolidState-1-rescue U3
+L wash_control-rescue:MOC3023M-Relay_SolidState-1-rescue-wash_control-rescue U3
 U 1 1 5DE7856C
 P 6110 2660
 F 0 "U3" H 6105 2940 50  0000 C CNN
@@ -1157,7 +1157,7 @@ F 3 "~" H 5100 4840 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L wash_control-rescue:AC-DC Q?
+L wash_control-rescue:AC-DC-wash_control-rescue Q?
 U 1 1 61209860
 P 6000 4540
 F 0 "Q?" H 6000 4373 50  0000 C CNN
@@ -1199,7 +1199,7 @@ Connection ~ 3095 4620
 Wire Wire Line
 	3855 2620 3695 2620
 $Comp
-L wash_control-rescue:ATmega8A-AU-MCU_Microchip_ATmega-1-rescue U1
+L wash_control-rescue:ATmega8A-AU-MCU_Microchip_ATmega-1-rescue-wash_control-rescue U1
 U 1 1 5DF01EBB
 P 3095 3220
 F 0 "U1" H 3090 3390 50  0000 C CNN
